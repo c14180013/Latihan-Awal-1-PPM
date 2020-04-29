@@ -36,14 +36,12 @@ export class KalkulatorComponent implements OnInit {
   }
 
   operator(y) {
-    if (this.angka1 != "") {
-      if (y == 0) {
-        this.op = "-";
-      } else if (y == 1) {
-        this.op = "+";
-      } else if (y == 2) {
-        this.op = "*";
-      }
+    if (y == 0) {
+      this.op = "-";
+    } else if (y == 1) {
+      this.op = "+";
+    } else if (y == 2) {
+      this.op = "*";
     }
   }
 

@@ -1,26 +1,26 @@
 <div>
-  <input type="text" readonly>
+  <textarea readonly>{{angka1}} {{op}} {{angka2}}</textarea>
 </div>
 
 <div>
-  <button>7</button>
-  <button>8</button>
-  <button>9</button>
+  <button (click)=input(7)>7</button>
+  <button (click)=input(8)>8</button>
+  <button (click)=input(9)>9</button>
 </div>
 <div>
-  <button>4</button>
-  <button>5</button>
-  <button>6</button>
+  <button (click)=input(4)>4</button>
+  <button (click)=input(5)>5</button>
+  <button (click)=input(6)>6</button>
 </div>
 <div>
-  <button>1</button>
-  <button>2</button>
-  <button>3</button>
+  <button (click)=input(1)>1</button>
+  <button (click)=input(2)>2</button>
+  <button (click)=input(3)>3</button>
 </div>
 <div>
-  <button>-</button>
-  <button>+</button>
-  <button>*</button>
+  <button (click)= operator(0)>-</button>
+  <button (click)= operator(1)>+</button>
+  <button (click)= operator(2)>*</button>
   <button (click)=pageHasil()>=</button>
 </div>
 

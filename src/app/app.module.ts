@@ -10,7 +10,7 @@ import { KalkulatorComponent } from './kalkulator/kalkulator.component';
 
 const ROUTES = [
   {path: 'kalkulator', component : KalkulatorComponent},
-  {path: 'hasil', component : HasilComponent},
+  {path: 'hasil/:hsl', component : HasilComponent},
 ]
 
 @NgModule({

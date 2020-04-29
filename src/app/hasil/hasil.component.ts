@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-hasil',
@@ -8,13 +9,15 @@ import { Router } from '@angular/router';
 })
 export class HasilComponent implements OnInit {
 
-  constructor(private router : Router) {}
+  constructor(private router : Router, private route : ActivatedRoute) {}
 
   pageKalkulator()
   {
     this.router.navigate(['/kalkulator']);
   }
 
+  hasil = "";
   ngOnInit() {
+    this.hasil = this.route.snapshot.paramMap.get('hsl');
   }
 }
